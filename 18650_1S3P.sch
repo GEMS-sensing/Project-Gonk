@@ -1243,6 +1243,94 @@ Right angle, 2 position, female</description>
 <circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="2.5"/>
 </package>
+<package name="SOD-923">
+<description>&lt;p&gt;SOD-923&lt;br&gt;Diode Package&lt;/p&gt;</description>
+<smd name="ANODE" x="-0.45" y="0" dx="0.3" dy="0.4" layer="1"/>
+<smd name="CATHODE" x="0.45" y="0" dx="0.3" dy="0.4" layer="1"/>
+<wire x1="-0.4" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.3" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.254" x2="0.254" y2="-0.254" width="0.2032" layer="21"/>
+</package>
+<package name="DO-216AA">
+<smd name="ANODE" x="0.6985" y="0" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="CATHODE" x="-1.6525" y="0" dx="2.67" dy="2.54" layer="1" rot="R180"/>
+<wire x1="-2.916" y1="1" x2="0.984" y2="1" width="0.127" layer="22"/>
+<wire x1="0.984" y1="1" x2="0.984" y2="-1" width="0.127" layer="22"/>
+<wire x1="0.984" y1="-1" x2="-2.916" y2="-1" width="0.127" layer="22"/>
+<wire x1="-2.916" y1="-1" x2="-2.916" y2="1" width="0.127" layer="22"/>
+</package>
+<package name="SOD-123F">
+<smd name="CAT" x="-1.43" y="0" dx="1.34" dy="1.8" layer="1"/>
+<smd name="ANODE" x="1.43" y="0" dx="1.34" dy="1.8" layer="1"/>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<rectangle x1="-1.5" y1="-1" x2="-0.5" y2="1" layer="21"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SOD323-R" urn="urn:adsk.eagle:footprint:43204/1" locally_modified="yes">
+<description>&lt;b&gt;SOD323 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="21"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
+<smd name="C" x="-1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="A" x="1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="0" y="1.254" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.284" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
+</package>
+<package name="DO214AC" urn="urn:adsk.eagle:footprint:43214/1" locally_modified="yes">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-2.3" y1="1" x2="2.3" y2="1" width="0.254" layer="21"/>
+<wire x1="2.3" y1="1" x2="2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="2.3" y1="-0.95" x2="-2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="-2.3" y1="-0.95" x2="-2.3" y2="1" width="0.254" layer="21"/>
+<wire x1="-0.8" y1="0" x2="0.25" y2="0.75" width="0.254" layer="21"/>
+<wire x1="0.25" y1="0.75" x2="0.25" y2="-0.7" width="0.254" layer="21"/>
+<wire x1="0.25" y1="-0.7" x2="-0.8" y2="0" width="0.254" layer="21"/>
+<smd name="C" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<text x="-0.1" y="1.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.1" y="-1.54" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.65" y1="-0.7" x2="-2.4" y2="0.65" layer="21"/>
+<rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="21"/>
+<rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
+</package>
+<package name="SOD-123">
+<smd name="ANODE" x="1.675" y="0" dx="0.85" dy="0.85" layer="1"/>
+<smd name="CAT" x="-1.675" y="0" dx="0.85" dy="0.85" layer="1"/>
+<wire x1="-1.35" y1="0.775" x2="-1.35" y2="-0.775" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.775" x2="1.35" y2="-0.7753" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.7753" x2="1.35" y2="0.775" width="0.127" layer="21"/>
+<wire x1="1.35" y1="0.775" x2="-1.35" y2="0.775" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.889" y="0.762"/>
+<vertex x="-0.889" y="-0.762"/>
+<vertex x="-0.635" y="-0.762"/>
+<vertex x="-0.635" y="0.762"/>
+</polygon>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SOD-123W">
+<description>Ref &lt;a href = https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.pdf&gt;datasheet &lt;/a&gt;</description>
+<smd name="CAT" x="-1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="ANODE" x="1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-1.3" y1="0.85" x2="-1.3" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.85" x2="1.3" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.85" x2="1.3" y2="0.85" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.85" x2="-1.3" y2="0.85" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-0.889" x2="-0.254" y2="0.889" layer="21"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BATTERY">
@@ -1400,6 +1488,17 @@ Switches electronic signals</description>
 <text x="88.9" y="7.62" size="2.54" layer="94">&gt;REV</text>
 <text x="1.016" y="7.874" size="1.778" layer="94">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
 http://creativecommons.org/licenses/by-sa/4.0/</text>
+</symbol>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2169,6 +2268,93 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE" prefix="D" uservalue="yes">
+<description>&lt;p&gt;Genaric Diode &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD-923" package="SOD-923">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-216AA" package="DO-216AA">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-123F" package="SOD-123F">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-323" package="SOD323-R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AC" package="DO214AC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-123W" package="SOD-123W">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5199,9 +5385,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="4.7K" value="4.7k"/>
 <part name="Q3" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
 <part name="F3" library="bschulz" deviceset="PPTC" device="1210" technology="1.75A" value="1.75A"/>
-<part name="Q4" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
 <part name="S1" library="bschulz" deviceset="SPDT" device="OS1020_RT"/>
-<part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10M" value="10M"/>
 <part name="J1" library="bschulz" deviceset="CONN_02" device="3.5MM_ROUND_RESTRICT"/>
 <part name="J2" library="bschulz" deviceset="CONN_02" device="2.54_SCREW_ROUND"/>
 <part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
@@ -5214,7 +5398,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="bschulz" deviceset="FRAME_A_L" device="">
 <attribute name="DESIGNER" value="Bobby Schulz"/>
 <attribute name="PROJECT" value="Project Gonk"/>
-<attribute name="REV" value="v0.0"/>
+<attribute name="REV" value="v0.1"/>
+</part>
+<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
+<part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
+<part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
+<part name="D4" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
+<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="MF" value="Diodes Inc"/>
+<attribute name="MPN" value="1N4148WT-7"/>
+</part>
+<part name="D5" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
+<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="MF" value="Diodes Inc"/>
+<attribute name="MPN" value="1N4148WT-7"/>
+</part>
+<part name="D6" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
+<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="MF" value="Diodes Inc"/>
+<attribute name="MPN" value="1N4148WT-7"/>
 </part>
 </parts>
 <sheets>
@@ -5247,9 +5449,9 @@ These fuses are used to prevent excessive cross charging</text>
 <attribute name="NAME" x="34.0614" y="181.61" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="38.862" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q1" gate="NMOS" x="63.5" y="172.72" smashed="yes" rot="MR270">
-<attribute name="NAME" x="63.5" y="167.64" size="1.778" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="66.04" y="167.64" size="1.778" layer="96" font="vector" rot="MR270"/>
+<instance part="Q1" gate="NMOS" x="63.5" y="172.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.5" y="167.64" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="60.96" y="167.64" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
 <instance part="F1" gate="G$1" x="45.72" y="170.18" smashed="yes">
 <attribute name="NAME" x="47.625" y="173.355" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -5265,9 +5467,9 @@ These fuses are used to prevent excessive cross charging</text>
 <attribute name="NAME" x="34.0614" y="146.05" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="38.862" y="146.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q2" gate="NMOS" x="63.5" y="137.16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="63.5" y="132.08" size="1.778" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="66.04" y="132.08" size="1.778" layer="96" font="vector" rot="MR270"/>
+<instance part="Q2" gate="NMOS" x="63.5" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.5" y="132.08" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="60.96" y="132.08" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
 <instance part="F2" gate="G$1" x="45.72" y="134.62" smashed="yes">
 <attribute name="NAME" x="47.625" y="137.795" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -5283,25 +5485,17 @@ These fuses are used to prevent excessive cross charging</text>
 <attribute name="NAME" x="34.0614" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="38.862" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q3" gate="NMOS" x="63.5" y="104.14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="63.5" y="99.06" size="1.778" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="66.04" y="99.06" size="1.778" layer="96" font="vector" rot="MR270"/>
+<instance part="Q3" gate="NMOS" x="63.5" y="104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.5" y="99.06" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="60.96" y="99.06" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
 <instance part="F3" gate="G$1" x="45.72" y="101.6" smashed="yes">
 <attribute name="NAME" x="47.625" y="104.775" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="46.99" y="98.806" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="Q4" gate="NMOS" x="215.9" y="162.56" smashed="yes" rot="MR270">
-<attribute name="NAME" x="215.9" y="157.48" size="1.778" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="218.44" y="157.48" size="1.778" layer="96" font="vector" rot="MR270"/>
-</instance>
 <instance part="S1" gate="G$1" x="223.52" y="175.26" smashed="yes">
 <attribute name="NAME" x="222.25" y="178.562" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="222.25" y="171.958" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R4" gate="G$1" x="218.44" y="185.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="216.9414" y="181.61" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="221.742" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J1" gate="G$1" x="88.9" y="50.8" smashed="yes">
 <attribute name="VALUE" x="86.36" y="45.974" size="1.778" layer="96" font="vector"/>
@@ -5349,6 +5543,30 @@ These fuses are used to prevent excessive cross charging</text>
 <attribute name="DESIGNER" x="195.58" y="25.4" size="2.54" layer="94"/>
 <attribute name="REV" x="261.62" y="7.62" size="2.54" layer="94"/>
 </instance>
+<instance part="R5" gate="G$1" x="55.88" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.3814" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="59.182" y="171.45" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="55.88" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.3814" y="135.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="59.182" y="135.89" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R7" gate="G$1" x="55.88" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.3814" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="59.182" y="102.87" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D4" gate="G$1" x="68.58" y="182.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="182.3974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="66.04" y="185.1914" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D5" gate="G$1" x="68.58" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="146.8374" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="66.04" y="149.6314" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D6" gate="G$1" x="68.58" y="114.3" smashed="yes" rot="R180">
+<attribute name="NAME" x="66.04" y="113.8174" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="66.04" y="116.6114" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5375,22 +5593,10 @@ These fuses are used to prevent excessive cross charging</text>
 <label x="33.02" y="193.04" size="1.6764" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="NMOS" pin="G"/>
-<wire x1="66.04" y1="177.8" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="180.34" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
-<label x="63.5" y="180.34" size="1.6764" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="154.94" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="157.48" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
 <label x="33.02" y="157.48" size="1.6764" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q2" gate="NMOS" pin="G"/>
-<wire x1="66.04" y1="142.24" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="144.78" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
-<label x="63.5" y="144.78" size="1.6764" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -5399,20 +5605,9 @@ These fuses are used to prevent excessive cross charging</text>
 <label x="33.02" y="124.46" size="1.6764" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="NMOS" pin="G"/>
-<wire x1="66.04" y1="109.22" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
-<label x="63.5" y="111.76" size="1.6764" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="O"/>
 <wire x1="226.06" y1="177.8" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
 <label x="228.6" y="177.8" size="1.6764" layer="95" xref="yes"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="190.5" x2="218.44" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="193.04" x2="226.06" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="193.04" x2="226.06" y2="177.8" width="0.1524" layer="91"/>
-<junction x="226.06" y="177.8"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -5489,34 +5684,15 @@ These fuses are used to prevent excessive cross charging</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="Q1" gate="NMOS" pin="D"/>
-<wire x1="53.34" y1="170.18" x2="58.42" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="160.02" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
-<junction x="53.34" y="170.18"/>
-</segment>
-</net>
-<net name="PACK-" class="0">
-<segment>
 <pinref part="Q1" gate="NMOS" pin="S"/>
-<wire x1="68.58" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
-<label x="73.66" y="170.18" size="1.6764" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q2" gate="NMOS" pin="S"/>
-<wire x1="68.58" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="91"/>
-<label x="73.66" y="134.62" size="1.6764" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q3" gate="NMOS" pin="S"/>
-<wire x1="68.58" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
-<label x="73.66" y="101.6" size="1.6764" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q4" gate="NMOS" pin="D"/>
-<wire x1="210.82" y1="160.02" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
-<label x="203.2" y="160.02" size="1.6764" layer="95" rot="R180" xref="yes"/>
+<wire x1="53.34" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
+<junction x="53.34" y="170.18"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="170.18" x2="58.42" y2="170.18" width="0.1524" layer="91"/>
+<junction x="55.88" y="170.18"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5529,12 +5705,15 @@ These fuses are used to prevent excessive cross charging</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="NMOS" pin="D"/>
-<wire x1="53.34" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="124.46" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="NMOS" pin="S"/>
+<wire x1="53.34" y1="134.62" x2="55.88" y2="134.62" width="0.1524" layer="91"/>
 <junction x="53.34" y="134.62"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
+<junction x="55.88" y="134.62"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5547,24 +5726,18 @@ These fuses are used to prevent excessive cross charging</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="F3" gate="G$1" pin="2"/>
-<pinref part="Q3" gate="NMOS" pin="D"/>
-<wire x1="53.34" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="91.44" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="NMOS" pin="S"/>
+<wire x1="53.34" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
 <junction x="53.34" y="101.6"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<junction x="55.88" y="101.6"/>
 </segment>
 </net>
 <net name="SYS-" class="0">
-<segment>
-<pinref part="Q4" gate="NMOS" pin="S"/>
-<wire x1="220.98" y1="160.02" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
-<label x="228.6" y="160.02" size="1.6764" layer="95" xref="yes"/>
-<pinref part="S1" gate="G$1" pin="S"/>
-<wire x1="226.06" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="172.72" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
-<junction x="226.06" y="160.02"/>
-</segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
@@ -5575,15 +5748,20 @@ These fuses are used to prevent excessive cross charging</text>
 <wire x1="96.52" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 <label x="101.6" y="38.1" size="1.6764" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="N$7" class="0">
 <segment>
-<pinref part="Q4" gate="NMOS" pin="G"/>
-<pinref part="S1" gate="G$1" pin="P"/>
-<wire x1="218.44" y1="167.64" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="175.26" x2="218.44" y2="180.34" width="0.1524" layer="91"/>
-<junction x="218.44" y="175.26"/>
+<pinref part="Q1" gate="NMOS" pin="D"/>
+<wire x1="68.58" y1="170.18" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
+<label x="76.2" y="170.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="NMOS" pin="D"/>
+<wire x1="68.58" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<label x="76.2" y="134.62" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="NMOS" pin="D"/>
+<wire x1="68.58" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<label x="76.2" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5592,6 +5770,64 @@ These fuses are used to prevent excessive cross charging</text>
 <wire x1="139.7" y1="83.82" x2="139.7" y2="0" width="0.1524" layer="91" style="longdash"/>
 <wire x1="5.08" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91" style="longdash"/>
 <junction x="139.7" y="83.82"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="144.78" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="147.32" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="NMOS" pin="G"/>
+<wire x1="60.96" y1="147.32" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="147.32" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
+<junction x="60.96" y="147.32"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="180.34" x2="55.88" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="182.88" x2="60.96" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="NMOS" pin="G"/>
+<wire x1="60.96" y1="182.88" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="182.88" x2="60.96" y2="182.88" width="0.1524" layer="91"/>
+<junction x="60.96" y="182.88"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="111.76" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="NMOS" pin="G"/>
+<wire x1="60.96" y1="114.3" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
+<junction x="60.96" y="114.3"/>
+</segment>
+</net>
+<net name="GATE" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="71.12" y1="182.88" x2="76.2" y2="182.88" width="0.1524" layer="91"/>
+<label x="76.2" y="182.88" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="71.12" y1="114.3" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
+<label x="76.2" y="114.3" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="71.12" y1="147.32" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
+<label x="76.2" y="147.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="P"/>
+<wire x1="218.44" y1="175.26" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
+<label x="210.82" y="175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
