@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -747,23 +747,23 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE_PART" value="100k" x="77.343" y="13.081" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D4" library="bschulz" package="SOD323-R" value="1N4148" x="79.756" y="57.277" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND" x="79.756" y="57.277" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND" x="79.756" y="57.277" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="79.756" y="57.277" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="1N4148WT-7" x="79.756" y="57.277" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1N4148WS-7-F" x="79.756" y="57.277" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="79.756" y="59.198" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="81.04" y="57.277" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="D5" library="bschulz" package="SOD323-R" value="1N4148" x="79.756" y="34.925" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND" x="79.756" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND" x="79.756" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="79.756" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="1N4148WT-7" x="79.756" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1N4148WS-7-F" x="79.756" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="79.756" y="36.973" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="81.04" y="34.925" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="D6" library="bschulz" package="SOD323-R" value="1N4148" x="79.756" y="12.573" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND" x="79.756" y="12.573" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND" x="79.756" y="12.573" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="79.756" y="12.573" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="1N4148WT-7" x="79.756" y="12.573" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1N4148WS-7-F" x="79.756" y="12.573" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="79.756" y="14.494" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="81.04" y="12.573" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5404,19 +5404,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="D4" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
-<attribute name="MPN" value="1N4148WT-7"/>
+<attribute name="MPN" value="1N4148WS-7-F"/>
 </part>
 <part name="D5" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
-<attribute name="MPN" value="1N4148WT-7"/>
+<attribute name="MPN" value="1N4148WS-7-F"/>
 </part>
 <part name="D6" library="bschulz" deviceset="DIODE" device="SOD-323" value="1N4148">
-<attribute name="DIGIKEY" value="1N4148WTDICT-ND"/>
+<attribute name="DIGIKEY" value="1N4148WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
-<attribute name="MPN" value="1N4148WT-7"/>
+<attribute name="MPN" value="1N4148WS-7-F"/>
 </part>
 </parts>
 <sheets>
