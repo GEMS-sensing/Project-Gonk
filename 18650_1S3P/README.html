@@ -1055,11 +1055,53 @@ body .markdown-body
 .codehilite .vi{color:teal}
 .codehilite .il{color:#009999}
 .codehilite .gc{color:#999;background-color:#EAF2F5}
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="specifications">Specifications:<a class="headerlink" href="#specifications" title="Permanent link"></a></h1>
+</style><title>README</title></head><body><article class="markdown-body"><h1 id="project-gonk">Project-Gonk<a class="headerlink" href="#project-gonk" title="Permanent link"></a></h1>
 <h3 id="battery-18650">Battery: 18650<a class="headerlink" href="#battery-18650" title="Permanent link"></a></h3>
 <h3 id="configuration-1s3p">Configuration: 1S3P<a class="headerlink" href="#configuration-1s3p" title="Permanent link"></a></h3>
+<p>Battery holder with integrated protection and control</p>
 <h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link"></a></h1>
 <ol>
 <li>Toggle switch to &ldquo;<b>OFF</b>&rdquo; position</li>
-<li>Verify battery voltage (Maximum differance between highest and lowest voltage cell should be less than )</li>
-</ol></article></body></html>
+<li>Verify battery voltage (Maximum difference between highest and lowest voltage cell should be less than <b>0.2V</b>)</li>
+<li>Insert batteries into holders (<b>Note polarity markings</b>)</li>
+<li>Verify polarity - if any of the <b>red indicator lamps</b> are lit, <b>stop!</b> Remove offending batteries and fix polarity before proceeding</li>
+<li>If no red lamps are lit, connect external system to either of the <b>Vout</b> connectors (<b>observe polarity of connector!</b>)</li>
+<li>Toggle switch to &ldquo;<b>ON</b>&rdquo; position when ready to activate </li>
+</ol>
+<h1 id="repo-roadmap">Repo Roadmap<a class="headerlink" href="#repo-roadmap" title="Permanent link"></a></h1>
+<h4 id="documents"><a href="/C:/Users/schul/Documents/Project-Gonk/18650_1S3P/Documents">Documents</a><a class="headerlink" href="#documents" title="Permanent link"></a></h4>
+<p>General document and image storage for repo and README</p>
+<h4 id="hardware"><a href="/C:/Users/schul/Documents/Project-Gonk/18650_1S3P/Hardware">Hardware</a><a class="headerlink" href="#hardware" title="Permanent link"></a></h4>
+<p>Current board files (Eagle), Bill of Materials (BoM), and other design documents</p>
+<h4 id="production"><a href="/C:/Users/schul/Documents/Project-Gonk/18650_1S3P/Production">Production</a><a class="headerlink" href="#production" title="Permanent link"></a></h4>
+<p>Contains the various Gerber and pick and place files required to have the Printed Circuit Boards (PCBs) manufactured or populated </p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+<ul>
+<li><strong>Type:</strong> Power</li>
+<li><strong>Interfaces:</strong> Power</li>
+<li><strong>Release Version:</strong> v0.1</li>
+</ul>
+<p><img alt="Gonk 18650 Parallel v0.1 - Top" src="/C:/Users/schul/Documents/Project-Gonk/18650_1S3P/Documents/Images/Gonk_0v1_Top.jpg" /></p>
+<p><img alt="Gonk 18650 Parallel v0.1 - Bottom" src="/C:/Users/schul/Documents/Project-Gonk/18650_1S3P/Documents/Images/Gonk_0v1_Top.jpg" /></p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link"></a></h2>
+<h3 id="on-board">On-Board<a class="headerlink" href="#on-board" title="Permanent link"></a></h3>
+<ul>
+<li>Power switch</li>
+<li>Reverse battery indication</li>
+<li>Poly fuse per battery</li>
+</ul>
+<h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link"></a></h3>
+<h2 id="specifications">Specifications<a class="headerlink" href="#specifications" title="Permanent link"></a></h2>
+<ul>
+<li><strong>Output Current (Max Constant):</strong> 5.25A</li>
+<li><strong>Current Per Battery (Max Constant):</strong> 1.75A</li>
+</ul>
+<h2 id="jumper-settings">Jumper Settings<a class="headerlink" href="#jumper-settings" title="Permanent link"></a></h2>
+<p><strong>Configuration Jumpers</strong>
+| Jumper | Purpose | Open | Closed | Default | 
+| ------ | ------- | ---------- | ---------- | ----- | 
+| <code>JP1</code> | Bypass poly fuse on battery 1 | Battery Protected |  | Closed |<br />
+| <code>JP2</code> | Bypass poly fuse on battery 2 | Battery Protected | Pullup Enabled | Open |
+| <code>JP3</code> | Bypass poly fuse on battery 3 | Battery Protected | I2C Isolated | Open | </p>
+<h2 id="known-issueserrata">Known Issues/Errata<a class="headerlink" href="#known-issueserrata" title="Permanent link"></a></h2>
+<h4 id="none">None!<a class="headerlink" href="#none" title="Permanent link"></a></h4></article></body></html>
