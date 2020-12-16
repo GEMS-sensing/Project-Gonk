@@ -29,7 +29,9 @@ Contains the various Gerber and pick and place files required to have the Printe
 * **Interfaces:** Power
 * **Release Version:** v0.1
 
-![Gonk 18650 Parallel v0.1 - Top](Documents/Images/Gonk_0v1_Top.jpg)
+![Gonk 18650 Parallel v0.1 - Top](Documents/Images/Gonk_0v1_Top_Cropped.jpg)
+
+<!-- ![Gonk 18650 Parallel v0.1 - Top](Documents/Images/Gonk_0v1_Top.jpg) -->
 
 <!-- ![Gonk 18650 Parallel v0.1 - Bottom](Documents/Images/Gonk_0v1_Bottom.jpg) -->
 
