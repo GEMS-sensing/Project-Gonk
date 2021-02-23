@@ -8163,6 +8163,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="246.38" y1="83.82" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
 <label x="241.3" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="ALRT"/>
+<wire x1="287.02" y1="167.64" x2="292.1" y2="167.64" width="0.1524" layer="91"/>
+<label x="292.1" y="167.64" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SHDN" class="0">
 <segment>
@@ -8434,13 +8439,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="J2" gate="G$1" pin="SCL"/>
 <wire x1="182.88" y1="185.42" x2="187.96" y2="185.42" width="0.1524" layer="91"/>
 <label x="187.96" y="185.42" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="ALRT"/>
-<wire x1="287.02" y1="167.64" x2="292.1" y2="167.64" width="0.1524" layer="91"/>
-<label x="292.1" y="167.64" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$28" class="0">
