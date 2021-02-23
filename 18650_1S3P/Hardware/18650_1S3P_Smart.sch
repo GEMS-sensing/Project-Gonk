@@ -984,6 +984,21 @@ C&amp;K, Non-Shorting (BBM), 100mA, 12V&lt;br&gt;
 <circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="2.5"/>
 </package>
+<package name="BATT_1042P_NOSILK">
+<description>&lt;b&gt;18650 Battery Holder&lt;/b&gt;&lt;br&gt;
+Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &lt;br&gt;
+&lt;a href = http://keyelco.com/product-pdf.cfm?p=13957&gt;Datasheet&lt;/a&gt;</description>
+<smd name="BATT+" x="39.67" y="0" dx="6.47" dy="7.46" layer="1" rot="R90"/>
+<smd name="BATT-" x="-39.67" y="0" dx="6.47" dy="7.46" layer="1" rot="R90"/>
+<wire x1="-38.525" y1="10.325" x2="-38.525" y2="-10.325" width="0.4064" layer="21"/>
+<wire x1="-38.525" y1="-10.325" x2="38.525" y2="-10.325" width="0.4064" layer="21"/>
+<wire x1="38.525" y1="-10.325" x2="38.525" y2="10.325" width="0.4064" layer="21"/>
+<wire x1="38.525" y1="10.325" x2="-38.525" y2="10.325" width="0.4064" layer="21"/>
+<hole x="-27.6" y="-8" drill="3.45"/>
+<hole x="27.6" y="8" drill="3.45"/>
+<hole x="35.82" y="-8" drill="2.39"/>
+<text x="39.37" y="3.81" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="bottom-right">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BQ2980">
@@ -1474,6 +1489,19 @@ Switches electrical signals</description>
 </technologies>
 </device>
 <device name="1042P" package="BATT_1042P">
+<connects>
+<connect gate="G$1" pin="+" pad="BATT+"/>
+<connect gate="G$1" pin="-" pad="BATT-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="36-1042P-ND" constant="no"/>
+<attribute name="MF" value="Keystone" constant="no"/>
+<attribute name="MPN" value="1042P" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1042P_NOSILK" package="BATT_1042P_NOSILK">
 <connects>
 <connect gate="G$1" pin="+" pad="BATT+"/>
 <connect gate="G$1" pin="-" pad="BATT-"/>
@@ -7553,7 +7581,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
 <part name="Q2" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
-<part name="BT1" library="bschulz" deviceset="18650" device="1042P"/>
+<part name="BT1" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
 <part name="D1" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
@@ -7569,7 +7597,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q3" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
 <part name="Q4" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
-<part name="BT2" library="bschulz" deviceset="18650" device="1042P"/>
+<part name="BT2" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
 <part name="D2" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
@@ -7585,7 +7613,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q5" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
 <part name="Q6" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E"/>
-<part name="BT3" library="bschulz" deviceset="18650" device="1042P"/>
+<part name="BT3" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
 <part name="D3" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>

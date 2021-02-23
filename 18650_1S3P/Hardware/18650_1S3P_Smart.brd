@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,16 +28,16 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -183,16 +183,32 @@
 <text x="94.869" y="27.94" size="1.778" layer="51" font="vector" ratio="15" rot="R270" align="center">POWER OUT</text>
 <text x="95.885" y="42.037" size="1.778" layer="51" font="vector" ratio="15" rot="R270" align="center">EXT
 SWITCH</text>
-<text x="92.71" y="36.576" size="1.778" layer="51" font="vector" ratio="15" align="center">FAULT</text>
-<text x="97.79" y="17.78" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">JUMP</text>
-<text x="97.79" y="8.89" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">INFO</text>
+<text x="89.535" y="34.29" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">FAULT</text>
+<text x="99.06" y="16.51" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">JUMP</text>
+<text x="99.06" y="8.89" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">INFO</text>
+<text x="92.202" y="57.785" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">CHARGE STAT</text>
+<text x="92.075" y="1.27" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">1S3P - Smart - 18650
+Project Gonk
+Bobby Schulz
+v0.0</text>
+<text x="3.81" y="7.62" size="3.81" layer="51" font="vector" ratio="15" align="center">+</text>
+<text x="3.81" y="29.21" size="3.81" layer="51" font="vector" ratio="15" align="center">+</text>
+<text x="3.81" y="50.8" size="3.81" layer="51" font="vector" ratio="15" align="center">+</text>
+<text x="85.09" y="50.8" size="3.81" layer="51" font="vector" ratio="15" align="center">-</text>
+<text x="85.09" y="29.21" size="3.81" layer="51" font="vector" ratio="15" align="center">-</text>
+<text x="85.09" y="7.62" size="3.81" layer="51" font="vector" ratio="15" align="center">-</text>
+<text x="29.21" y="5.08" size="1.016" layer="52" font="vector" ratio="15" rot="MR180" align="center-left">INFO - Press to display battery charge state via CHARGE STAT LEDs
+JUMP - Press to "jump start" system on first insertion of batteries. 
+System will start automatically if charger is applied
+SLEEP - Press and hold for &gt; 6s in order to place the device in shutdown for shipping or storage. 
+Must press JUMP or connect charger to start again</text>
 </plain>
 <libraries>
 <library name="bschulz">
 <packages>
-<package name="BATT_1042P">
+<package name="BATT_1042P_NOSILK">
 <description>&lt;b&gt;18650 Battery Holder&lt;/b&gt;&lt;br&gt;
-Keystone Electronics 1042P SMD Battery Holder &lt;br&gt;
+Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &lt;br&gt;
 &lt;a href = http://keyelco.com/product-pdf.cfm?p=13957&gt;Datasheet&lt;/a&gt;</description>
 <smd name="BATT+" x="39.67" y="0" dx="6.47" dy="7.46" layer="1" rot="R90"/>
 <smd name="BATT-" x="-39.67" y="0" dx="6.47" dy="7.46" layer="1" rot="R90"/>
@@ -203,8 +219,6 @@ Keystone Electronics 1042P SMD Battery Holder &lt;br&gt;
 <hole x="-27.6" y="-8" drill="3.45"/>
 <hole x="27.6" y="8" drill="3.45"/>
 <hole x="35.82" y="-8" drill="2.39"/>
-<text x="41.275" y="-6.35" size="5.08" layer="21" font="vector" ratio="15" rot="R90" align="center">+</text>
-<text x="-41.275" y="-6.35" size="5.08" layer="21" font="vector" ratio="15" rot="R270" align="center">-</text>
 <text x="39.37" y="3.81" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="bottom-right">&gt;NAME</text>
 </package>
 <package name="SOD323-R" urn="urn:adsk.eagle:footprint:43204/1" locally_modified="yes">
@@ -700,71 +714,71 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="BT1" library="bschulz" package="BATT_1042P" value="186501042P" x="44.45" y="12.7" smashed="yes" rot="R180">
+<element name="BT1" library="bschulz" package="BATT_1042P_NOSILK" value="186501042P_NOSILK" x="44.45" y="12.7" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="36-1042P-ND" x="-13.97" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Keystone" x="-13.97" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="1042P" x="-13.97" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="5.08" y="8.89" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="bottom-right"/>
+<attribute name="NAME" x="3.81" y="16.51" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-right"/>
 </element>
-<element name="BT2" library="bschulz" package="BATT_1042P" value="186501042P" x="44.45" y="34.29" smashed="yes" rot="R180">
+<element name="BT2" library="bschulz" package="BATT_1042P_NOSILK" value="186501042P_NOSILK" x="44.45" y="34.29" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="36-1042P-ND" x="-13.97" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Keystone" x="-13.97" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="1042P" x="-13.97" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="5.08" y="30.48" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="bottom-right"/>
+<attribute name="NAME" x="3.81" y="38.1" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-right"/>
 </element>
-<element name="BT3" library="bschulz" package="BATT_1042P" value="186501042P" x="44.45" y="55.88" smashed="yes" rot="R180">
+<element name="BT3" library="bschulz" package="BATT_1042P_NOSILK" value="186501042P_NOSILK" x="44.45" y="55.88" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="36-1042P-ND" x="-13.97" y="110.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Keystone" x="-13.97" y="110.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="1042P" x="-13.97" y="110.49" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.62" y="54.61" size="0.6096" layer="25" font="vector" ratio="15" align="bottom-right"/>
+<attribute name="NAME" x="3.81" y="59.69" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-right"/>
 </element>
 <element name="C1" library="bschulz_passives" package="C0603" value="1uF" x="45.72" y="12.573" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="-34.29" y="40.513" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="-34.29" y="40.513" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="-34.29" y="40.513" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.117" y="12.573" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="46.736" y="12.573" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="44.323" y="12.573" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="C2" library="bschulz_passives" package="C0603" value="1uF" x="45.72" y="34.036" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="-34.29" y="65.786" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="-34.29" y="65.786" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="-34.29" y="65.786" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.117" y="34.036" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="46.863" y="34.036" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="44.323" y="34.036" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="C3" library="bschulz_passives" package="C0603" value="1uF" x="45.72" y="55.626" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="-34.29" y="91.186" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="-34.29" y="91.186" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="-34.29" y="91.186" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.117" y="55.626" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="46.736" y="55.626" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="44.323" y="55.626" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="C4" library="bschulz_passives" package="C0603" value="0.1uF" x="84.709" y="29.337" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="164.719" y="-10.033" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="Murata" x="164.719" y="-10.033" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="164.719" y="-10.033" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="83.947" y="29.21" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="84.709" y="31.242" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="86.106" y="29.337" size="0.6096" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="C5" library="bschulz_passives" package="C0603" value="0.47uF" x="86.868" y="29.337" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="1276-2083-1-ND" x="166.878" y="5.207" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="Samsung" x="166.878" y="5.207" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="CL10B474KA8NNNC" x="166.878" y="5.207" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="85.471" y="29.337" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="86.868" y="31.242" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="88.265" y="29.337" size="0.6096" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="C6" library="bschulz_passives" package="C0603" value="1uF" x="88.773" y="42.545" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="45.593" y="-37.465" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="45.593" y="-37.465" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="45.593" y="-37.465" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="88.773" y="43.942" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="89.154" y="43.561" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="88.773" y="41.148" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="C7" library="bschulz_passives" package="C0603" value="0.1uF" x="91.948" y="42.545" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="138.938" y="122.555" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Murata" x="138.938" y="122.555" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="138.938" y="122.555" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="91.948" y="41.148" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="91.948" y="43.561" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="91.948" y="43.942" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="D1" library="bschulz" package="SOD323-R" value="DIODE_SCHOTTKYSOD-323" x="48.641" y="16.383" smashed="yes" rot="MR0">
@@ -804,7 +818,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="WM1861-ND" x="175.26" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Molex" x="175.26" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0436500300" x="175.26" y="62.23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="104.14" y="34.925" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="100.33" y="48.895" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="Q1" library="bschulz" package="DFN3X3A_8L_EP1_P" value="MOSFET-NCH-AON7522E" x="36.449" y="11.684" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="-33.401" y="-73.406" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -816,7 +830,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="111.379" y="100.33" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Alpha &amp; Omega" x="111.379" y="100.33" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="AON7522E" x="111.379" y="100.33" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="38.608" y="15.24" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="34.29" y="15.24" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="Q3" library="bschulz" package="DFN3X3A_8L_EP1_P" value="MOSFET-NCH-AON7522E" x="36.449" y="33.274" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="-43.561" y="-51.816" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -828,7 +842,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="121.539" y="121.92" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Alpha &amp; Omega" x="121.539" y="121.92" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="AON7522E" x="121.539" y="121.92" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="38.608" y="36.83" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="34.29" y="36.83" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="Q5" library="bschulz" package="DFN3X3A_8L_EP1_P" value="MOSFET-NCH-AON7522E" x="36.449" y="54.864" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="-53.721" y="-30.226" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -840,10 +854,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="785-1505-1-ND" x="131.699" y="143.51" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Alpha &amp; Omega" x="131.699" y="143.51" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="AON7522E" x="131.699" y="143.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="38.608" y="58.42" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="34.29" y="58.42" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="Q7" library="bschulz" package="POWERDI3333-8" value="MOSFET_PCH-DMP2008" x="90.297" y="45.72" smashed="yes" rot="MR90">
-<attribute name="NAME" x="90.297" y="43.561" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="90.297" y="47.879" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="Q8" library="bschulz" package="POWERDI3333-8" value="MOSFET_PCH-DMP2008" x="86.36" y="45.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="86.36" y="47.879" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
@@ -852,7 +866,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-10.668" y="-70.358" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-10.668" y="-70.358" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-10.668" y="-70.358" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="11.049" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="10.668" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="40.132" y="8.255" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-10.668" y="-70.358" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -860,7 +874,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-20.0HRCT-ND" x="-36.449" y="118.491" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-36.449" y="118.491" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-0720RL" x="-36.449" y="118.491" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="44.958" y="37.211" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="43.561" y="39.116" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="42.164" y="37.211" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="20" x="-36.449" y="118.491" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -868,7 +882,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-34.29" y="122.301" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-34.29" y="122.301" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-34.29" y="122.301" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.117" y="37.211" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="45.72" y="39.116" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="44.323" y="37.211" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-34.29" y="122.301" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -883,7 +897,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-48.768" y="-27.178" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-48.768" y="-27.178" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-48.768" y="-27.178" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="54.229" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="53.848" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="51.435" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-48.768" y="-27.178" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -891,7 +905,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-330HRCT-ND" x="132.842" y="130.81" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="132.842" y="130.81" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-07330RL" x="132.842" y="130.81" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="40.132" y="49.403" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="40.132" y="51.816" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="40.132" y="52.197" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="330" x="132.842" y="130.81" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -899,7 +913,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" x="-56.388" y="-25.146" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-56.388" y="-25.146" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="AC0603FR-071KL" x="-56.388" y="-25.146" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="56.261" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="55.88" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="53.467" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="1k" x="-56.388" y="-25.146" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -907,7 +921,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-20.0HRCT-ND" x="-41.529" y="74.041" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-41.529" y="74.041" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-0720RL" x="-41.529" y="74.041" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="44.958" y="58.801" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="43.561" y="60.706" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="42.164" y="58.801" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="20" x="-41.529" y="74.041" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -915,7 +929,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-39.37" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-39.37" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-39.37" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.244" y="58.674" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="45.72" y="60.706" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="44.323" y="58.801" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-39.37" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -937,7 +951,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-330HRCT-ND" x="94.742" y="87.63" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="94.742" y="87.63" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-07330RL" x="94.742" y="87.63" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="40.132" y="6.223" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="40.132" y="8.636" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="9.017" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="330" x="94.742" y="87.63" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -945,7 +959,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-30.0HRCT-ND" x="114.3" y="137.16" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="114.3" y="137.16" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-0730RL" x="114.3" y="137.16" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="91.44" y="50.673" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="91.44" y="53.34" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="91.44" y="53.467" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="30" x="114.3" y="137.16" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -953,7 +967,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-30.0HRCT-ND" x="118.11" y="140.97" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="118.11" y="140.97" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-0730RL" x="118.11" y="140.97" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="91.44" y="54.483" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="91.44" y="57.15" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="91.44" y="57.277" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="30" x="118.11" y="140.97" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -961,7 +975,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-30.0HRCT-ND" x="121.92" y="144.78" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="121.92" y="144.78" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-0730RL" x="121.92" y="144.78" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="91.44" y="58.293" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="91.44" y="60.96" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="91.44" y="61.087" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="30" x="121.92" y="144.78" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -969,7 +983,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-30.0HRCT-ND" x="125.73" y="148.59" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="125.73" y="148.59" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-0730RL" x="125.73" y="148.59" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="91.44" y="62.103" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="91.44" y="64.77" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="91.44" y="64.897" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="30" x="125.73" y="148.59" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -977,7 +991,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100KHRCT-ND" x="135.636" y="96.52" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="135.636" y="96.52" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100KL" x="135.636" y="96.52" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="97.536" y="10.033" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="95.25" y="11.43" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="97.536" y="12.827" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="135.636" y="96.52" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -985,7 +999,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100KHRCT-ND" x="55.626" y="-71.12" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="55.626" y="-71.12" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100KL" x="55.626" y="-71.12" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="97.536" y="15.367" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="95.25" y="13.97" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE" x="97.536" y="12.573" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="55.626" y="-71.12" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -993,7 +1007,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-330HRCT-ND" x="143.256" y="101.6" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="143.256" y="101.6" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-07330RL" x="143.256" y="101.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="97.536" y="15.113" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="95.25" y="16.51" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="97.536" y="17.907" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="330" x="143.256" y="101.6" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -1001,7 +1015,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="P1.00MHCT-ND" x="138.303" y="125.476" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Panasonic" x="138.303" y="125.476" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" x="138.303" y="125.476" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="88.773" y="38.989" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="86.868" y="40.386" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="88.773" y="41.783" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="1M" x="138.303" y="125.476" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -1009,7 +1023,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-10.0KHRCT-ND" x="35.433" y="-46.863" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="35.433" y="-46.863" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="RC0603FR-0710KL" x="35.433" y="-46.863" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="88.773" y="39.624" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="86.868" y="38.227" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE" x="88.773" y="36.83" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="10k" x="35.433" y="-46.863" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -1017,7 +1031,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="P1.00MHCT-ND" x="179.959" y="-18.669" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="Panasonic" x="179.959" y="-18.669" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" x="179.959" y="-18.669" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="93.472" y="38.481" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="95.885" y="38.481" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE" x="96.266" y="38.481" size="0.6096" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE_PART" value="1M" x="179.959" y="-18.669" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
@@ -1025,7 +1039,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" x="-18.288" y="-68.326" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-18.288" y="-68.326" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="AC0603FR-071KL" x="-18.288" y="-68.326" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="13.081" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="12.7" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="10.287" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="1k" x="-18.288" y="-68.326" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -1033,7 +1047,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="P1.00MHCT-ND" x="179.959" y="-19.431" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="Panasonic" x="179.959" y="-19.431" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" x="179.959" y="-19.431" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="93.472" y="41.529" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="95.885" y="41.529" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="96.266" y="41.529" size="0.6096" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE_PART" value="1M" x="179.959" y="-19.431" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
@@ -1041,7 +1055,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="P1.00MHCT-ND" x="17.78" y="119.38" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Panasonic" x="17.78" y="119.38" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" x="17.78" y="119.38" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="104.267" y="54.61" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="104.013" y="54.61" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE" x="101.473" y="54.61" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="1M" x="17.78" y="119.38" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -1049,7 +1063,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-20.0HRCT-ND" x="-36.449" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-36.449" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-0720RL" x="-36.449" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="44.958" y="15.621" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="43.561" y="17.526" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="42.164" y="15.621" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="20" x="-36.449" y="77.851" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -1057,7 +1071,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-34.29" y="81.661" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="Yageo" x="-34.29" y="81.661" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-34.29" y="81.661" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="47.117" y="15.621" size="0.6096" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<attribute name="NAME" x="45.72" y="17.526" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="44.323" y="15.621" size="0.6096" layer="28" font="vector" ratio="15" rot="MR90" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-34.29" y="81.661" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -1072,7 +1086,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-100HRCT-ND" x="-29.718" y="-48.768" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-29.718" y="-48.768" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="RC0603FR-07100RL" x="-29.718" y="-48.768" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="32.639" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="32.258" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="29.845" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="100" x="-29.718" y="-48.768" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -1080,7 +1094,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-330HRCT-ND" x="113.792" y="109.22" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Yageo" x="113.792" y="109.22" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="RC0603FR-07330RL" x="113.792" y="109.22" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="40.132" y="27.813" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="NAME" x="40.132" y="30.226" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="40.132" y="30.607" size="0.6096" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE_PART" value="330" x="113.792" y="109.22" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -1088,7 +1102,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" x="-37.338" y="-46.736" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="Yageo" x="-37.338" y="-46.736" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="AC0603FR-071KL" x="-37.338" y="-46.736" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="40.132" y="34.671" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="40.132" y="34.29" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="40.132" y="31.877" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE_PART" value="1k" x="-37.338" y="-46.736" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -1096,19 +1110,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="450-1650-ND" x="104.14" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="TE Connectivity" x="104.14" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1825910-6" x="104.14" y="8.89" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="104.14" y="12.7" size="0.8128" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="107.95" y="8.89" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="S2" library="bschulz" package="SWITCH_6MM_TH" value="BUTTON6X6_TH" x="104.14" y="16.51" smashed="yes">
 <attribute name="DIGIKEY" value="450-1650-ND" x="104.14" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="TE Connectivity" x="104.14" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1825910-6" x="104.14" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="104.14" y="20.32" size="0.8128" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="107.95" y="16.51" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="S3" library="bschulz" package="SWITCH_6MM_TH" value="BUTTON6X6_TH" x="87.63" y="20.32" smashed="yes">
 <attribute name="DIGIKEY" value="450-1650-ND" x="87.63" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="TE Connectivity" x="87.63" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1825910-6" x="87.63" y="20.32" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="87.63" y="24.13" size="0.8128" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="91.44" y="20.32" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="S4" library="bschulz" package="OS102011MA1QN1" value="SPDTOS1020_RT" x="106.68" y="55.753" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="CKN9559-ND" x="179.07" y="88.773" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1147,7 +1161,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="296-37910-1-ND" x="160.782" y="-32.004" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="TI" x="160.782" y="-32.004" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="TLV3691IDCKR" x="160.782" y="-32.004" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="92.202" y="41.91" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="NAME" x="92.202" y="38.862" size="0.6096" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="92.202" y="38.862" size="0.6096" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="J2" library="bschulz" package="2X3_MICROFIT_RT" value="GEMS_POWER_PLUGOUTPUT" x="104.14" y="27.94" smashed="yes" rot="R90">
@@ -1155,18 +1169,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISP" value="Output" x="104.14" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Molex" x="104.14" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0430450600" x="104.14" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="104.14" y="20.955" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="100.33" y="20.955" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R32" library="bschulz_passives" package="R0603" value="1k" x="97.028" y="33.909" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" x="97.028" y="33.909" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="Yageo" x="97.028" y="33.909" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="AC0603FR-071KL" x="97.028" y="33.909" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="95.631" y="33.909" size="0.6096" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="NAME" x="97.028" y="35.814" size="0.6096" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="98.425" y="33.909" size="0.6096" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE_PART" value="1k" x="97.028" y="33.909" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D8" library="bschulz" package="LED_1206_BOTTOM" value="LED1206_BOTTOM" x="92.71" y="34.29" smashed="yes" rot="MR180">
-<attribute name="NAME" x="92.71" y="32.639" size="0.6096" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
+<element name="D8" library="bschulz" package="LED_1206_BOTTOM" value="LED1206_BOTTOM" x="92.202" y="34.29" smashed="yes" rot="MR180">
+<attribute name="NAME" x="92.202" y="32.639" size="0.6096" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="H1" library="bschulz" package="2_56" value="" x="2.54" y="65.71" smashed="yes">
 <attribute name="DIGIKEY" value="DNP" x="2.54" y="65.71" size="1.778" layer="27" display="off"/>
@@ -1332,16 +1346,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="42.926" y1="53.34" x2="50.546" y2="45.72" width="1.016" layer="1"/>
 <wire x1="91.645" y1="29.045" x2="92.113" y2="29.045" width="0.2" layer="16"/>
 <wire x1="92.113" y1="29.045" x2="92.329" y2="28.829" width="0.2" layer="16"/>
-<wire x1="93.345" y1="31.5263625" x2="92.6133625" y2="32.258" width="0.2" layer="16"/>
-<wire x1="86.995" y1="32.258" x2="86.106" y2="31.369" width="0.2" layer="16"/>
+<wire x1="93.345" y1="31.5263625" x2="92.3593625" y2="32.512" width="0.2" layer="16"/>
+<wire x1="87.249" y1="32.512" x2="86.106" y2="31.369" width="0.2" layer="16"/>
 <wire x1="86.106" y1="29.591" x2="86.2726" y2="29.4244" width="0.2" layer="16"/>
-<wire x1="92.6133625" y1="32.258" x2="91.645" y2="32.258" width="0.2" layer="16"/>
-<wire x1="91.645" y1="32.258" x2="86.995" y2="32.258" width="0.2" layer="16"/>
+<wire x1="92.3593625" y1="32.512" x2="91.645" y2="32.512" width="0.2" layer="16"/>
+<wire x1="91.645" y1="32.512" x2="87.249" y2="32.512" width="0.2" layer="16"/>
 <wire x1="86.106" y1="31.369" x2="86.106" y2="30.226" width="0.2" layer="16"/>
 <wire x1="86.106" y1="30.226" x2="86.106" y2="29.591" width="0.2" layer="16"/>
 <wire x1="88.6744" y1="29.4244" x2="88.695" y2="29.445" width="0.2" layer="16"/>
 <wire x1="86.2726" y1="29.4244" x2="88.6744" y2="29.4244" width="0.2" layer="16"/>
-<wire x1="91.645" y1="31.045" x2="91.645" y2="32.258" width="0.2" layer="16"/>
+<wire x1="91.645" y1="31.045" x2="91.645" y2="32.512" width="0.2" layer="16"/>
 <wire x1="84.86" y1="46.045" x2="84.86" y2="45.395" width="0.3048" layer="16"/>
 <wire x1="84.86" y1="46.045" x2="84.86" y2="46.695" width="0.3048" layer="16"/>
 <wire x1="84.86" y1="45.395" x2="84.86" y2="44.745" width="0.3048" layer="16"/>
@@ -1800,25 +1814,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J2" pad="6"/>
 <wire x1="88.695" y1="30.645" x2="88.1" y2="30.645" width="0.2" layer="16"/>
 <wire x1="88.1" y1="30.645" x2="88.011" y2="30.734" width="0.2" layer="16"/>
-<wire x1="88.011" y1="30.734" x2="88.011" y2="31.369" width="0.2" layer="16"/>
-<wire x1="88.011" y1="31.369" x2="88.392" y2="31.75" width="0.2" layer="16"/>
-<via x="88.392" y="31.75" extent="1-16" drill="0.254"/>
-<wire x1="96.82" y1="24.94" x2="95.202" y2="24.94" width="0.2" layer="1"/>
-<wire x1="95.202" y1="24.94" x2="88.392" y2="31.75" width="0.2" layer="1"/>
+<wire x1="88.011" y1="30.734" x2="88.011" y2="31.623" width="0.2" layer="16"/>
+<wire x1="88.011" y1="31.623" x2="88.392" y2="32.004" width="0.2" layer="16"/>
+<via x="88.392" y="32.004" extent="1-16" drill="0.254"/>
+<wire x1="96.82" y1="24.94" x2="95.456" y2="24.94" width="0.2" layer="1"/>
+<wire x1="95.456" y1="24.94" x2="88.392" y2="32.004" width="0.2" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U4" pad="14"/>
 <contactref element="J2" pad="4"/>
-<wire x1="89.146" y1="31.75" x2="88.695" y2="31.299" width="0.2" layer="16"/>
-<wire x1="88.695" y1="31.045" x2="88.695" y2="31.299" width="0.2" layer="16"/>
-<wire x1="89.281" y1="31.75" x2="89.146" y2="31.75" width="0.2" layer="16"/>
-<via x="89.281" y="31.75" extent="1-16" drill="0.254"/>
-<wire x1="89.281" y1="31.75" x2="89.662" y2="31.75" width="0.2" layer="1"/>
-<wire x1="91.186" y1="29.464" x2="91.948" y2="28.702" width="0.2" layer="1"/>
-<wire x1="91.948" y1="28.702" x2="94.582" y2="28.702" width="0.2" layer="1"/>
+<wire x1="89.281" y1="32.004" x2="89.146" y2="32.004" width="0.2" layer="16"/>
+<wire x1="89.146" y1="32.004" x2="88.695" y2="31.553" width="0.2" layer="16"/>
+<wire x1="88.695" y1="31.045" x2="88.695" y2="31.553" width="0.2" layer="16"/>
+<via x="89.281" y="32.004" extent="1-16" drill="0.254"/>
+<wire x1="92.583" y1="28.702" x2="94.582" y2="28.702" width="0.2" layer="1"/>
 <wire x1="94.582" y1="28.702" x2="96.82" y2="30.94" width="0.2" layer="1"/>
-<wire x1="89.662" y1="31.75" x2="91.186" y2="30.226" width="0.2" layer="1"/>
-<wire x1="91.186" y1="30.226" x2="91.186" y2="29.464" width="0.2" layer="1"/>
+<wire x1="92.583" y1="28.702" x2="89.281" y2="32.004" width="0.2" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="R20" pad="2"/>
@@ -1862,31 +1873,30 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="91.313" y1="61.595" x2="90.59" y2="62.318" width="0.4064" layer="16"/>
 <wire x1="90.59" y1="63.5" x2="89.408" y2="63.5" width="0.254" layer="16"/>
 <via x="89.408" y="63.5" extent="1-16" drill="0.254"/>
-<wire x1="93.8149" y1="32.2961" x2="94.234" y2="32.7152" width="0.254" layer="1"/>
 <wire x1="89.5604" y1="47.71894375" x2="88.6714" y2="48.60794375" width="0.254" layer="1"/>
-<wire x1="89.5604" y1="41.80799375" x2="89.5604" y2="47.71894375" width="0.254" layer="1"/>
+<wire x1="89.5604" y1="47.71894375" x2="89.5604" y2="41.80799375" width="0.254" layer="1"/>
 <wire x1="89.9414" y1="59.0804" x2="89.9414" y2="61.6966" width="0.254" layer="1"/>
 <wire x1="89.9414" y1="61.6966" x2="89.408" y2="62.23" width="0.254" layer="1"/>
 <wire x1="89.408" y1="62.23" x2="89.408" y2="63.5" width="0.254" layer="1"/>
-<wire x1="94.234" y1="32.7152" x2="94.234" y2="37.13439375" width="0.254" layer="1"/>
-<wire x1="94.234" y1="37.13439375" x2="89.5604" y2="41.80799375" width="0.254" layer="1"/>
 <wire x1="88.6714" y1="48.60794375" x2="88.6714" y2="57.8104" width="0.254" layer="1"/>
 <wire x1="88.6714" y1="57.8104" x2="89.9414" y2="59.0804" width="0.254" layer="1"/>
 <via x="93.8149" y="32.2961" extent="1-16" drill="0.254"/>
 <wire x1="92.837" y1="31.3182" x2="93.8149" y2="32.2961" width="0.254" layer="1"/>
-<wire x1="93.8149" y1="32.2961" x2="95.25" y2="30.861" width="0.254" layer="16"/>
-<wire x1="95.25" y1="30.861" x2="95.25" y2="27.94" width="0.254" layer="16"/>
-<via x="95.25" y="27.94" extent="1-16" drill="0.254"/>
 <via x="97.536" y="12.827" extent="1-16" drill="0.254"/>
-<wire x1="95.25" y1="27.94" x2="97.2056" y2="25.9844" width="0.254" layer="1"/>
-<wire x1="97.2056" y1="25.9844" x2="97.25260625" y2="25.9844" width="0.254" layer="1"/>
-<wire x1="97.25260625" y1="25.9844" x2="97.8644" y2="25.37260625" width="0.254" layer="1"/>
-<wire x1="97.8644" y1="25.37260625" x2="97.8644" y2="24.50739375" width="0.254" layer="1"/>
-<wire x1="97.8644" y1="24.50739375" x2="97.536" y2="24.17899375" width="0.254" layer="1"/>
-<wire x1="97.536" y1="24.17899375" x2="97.536" y2="12.827" width="0.254" layer="1"/>
+<wire x1="97.536" y1="12.827" x2="97.536" y2="24.17899375" width="0.254" layer="1"/>
 <wire x1="97.536" y1="12.827" x2="97.028" y2="12.827" width="0.254" layer="16"/>
 <wire x1="97.028" y1="12.827" x2="96.686" y2="12.485" width="0.254" layer="16"/>
 <wire x1="96.686" y1="12.485" x2="96.686" y2="11.43" width="0.254" layer="16"/>
+<wire x1="97.917" y1="24.55999375" x2="97.917" y2="28.448" width="0.254" layer="1"/>
+<wire x1="97.917" y1="28.448" x2="96.901" y2="29.464" width="0.254" layer="1"/>
+<wire x1="96.901" y1="29.464" x2="96.393" y2="29.464" width="0.254" layer="1"/>
+<via x="96.393" y="29.464" extent="1-16" drill="0.254"/>
+<wire x1="96.393" y1="29.464" x2="95.377" y2="29.464" width="0.254" layer="16"/>
+<wire x1="95.377" y1="29.464" x2="93.8149" y2="31.0261" width="0.254" layer="16"/>
+<wire x1="93.8149" y1="31.0261" x2="93.8149" y2="32.2961" width="0.254" layer="16"/>
+<wire x1="97.536" y1="24.17899375" x2="97.917" y2="24.55999375" width="0.254" layer="1"/>
+<wire x1="93.8149" y1="37.55349375" x2="93.8149" y2="32.2961" width="0.254" layer="1"/>
+<wire x1="89.5604" y1="41.80799375" x2="93.8149" y2="37.55349375" width="0.254" layer="1"/>
 </signal>
 <signal name="LED2">
 <contactref element="U4" pad="3"/>
@@ -1906,13 +1916,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="99.822" y1="50.165" x2="90.932" y2="50.165" width="0.4064" layer="16"/>
 <wire x1="90.59" y1="52.07" x2="89.408" y2="52.07" width="0.254" layer="16"/>
 <via x="89.408" y="52.07" extent="1-16" drill="0.254"/>
-<wire x1="92.837" y1="30.6578" x2="93.5228" y2="30.6578" width="0.254" layer="1"/>
+<wire x1="92.837" y1="30.6578" x2="93.1418" y2="30.6578" width="0.254" layer="1"/>
 <wire x1="89.9668" y1="41.97633125" x2="89.9668" y2="47.88728125" width="0.254" layer="1"/>
 <wire x1="89.408" y1="48.44608125" x2="89.408" y2="52.07" width="0.254" layer="1"/>
 <wire x1="89.9668" y1="47.88728125" x2="89.408" y2="48.44608125" width="0.254" layer="1"/>
-<wire x1="93.5228" y1="30.6578" x2="94.6404" y2="31.7754" width="0.254" layer="1"/>
-<wire x1="94.6404" y1="31.7754" x2="94.6404" y2="37.30273125" width="0.254" layer="1"/>
-<wire x1="94.6404" y1="37.30273125" x2="89.9668" y2="41.97633125" width="0.254" layer="1"/>
+<wire x1="93.1418" y1="30.6578" x2="94.3864" y2="31.9024" width="0.254" layer="1"/>
+<wire x1="94.3864" y1="31.9024" x2="94.3864" y2="37.55673125" width="0.254" layer="1"/>
+<wire x1="94.3864" y1="37.55673125" x2="89.9668" y2="41.97633125" width="0.254" layer="1"/>
 </signal>
 <signal name="LED3">
 <contactref element="U4" pad="4"/>
@@ -1923,12 +1933,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="90.59" y1="55.88" x2="89.408" y2="55.88" width="0.254" layer="16"/>
 <via x="89.408" y="55.88" extent="1-16" drill="0.254"/>
 <wire x1="92.837" y1="29.9974" x2="93.4371375" y2="29.9974" width="0.254" layer="1"/>
-<wire x1="95.0468" y1="31.6070625" x2="95.0468" y2="37.47106875" width="0.254" layer="1"/>
+<wire x1="94.9198" y1="31.4800625" x2="94.9198" y2="37.59806875" width="0.254" layer="1"/>
 <wire x1="89.408" y1="52.82434375" x2="89.408" y2="55.88" width="0.254" layer="1"/>
 <wire x1="90.3732" y1="42.14466875" x2="90.3732" y2="51.85914375" width="0.254" layer="1"/>
 <wire x1="90.3732" y1="51.85914375" x2="89.408" y2="52.82434375" width="0.254" layer="1"/>
-<wire x1="93.4371375" y1="29.9974" x2="95.0468" y2="31.6070625" width="0.254" layer="1"/>
-<wire x1="95.0468" y1="37.47106875" x2="90.3732" y2="42.14466875" width="0.254" layer="1"/>
+<wire x1="93.4371375" y1="29.9974" x2="94.9198" y2="31.4800625" width="0.254" layer="1"/>
+<wire x1="94.9198" y1="37.59806875" x2="90.3732" y2="42.14466875" width="0.254" layer="1"/>
 </signal>
 <signal name="LED4">
 <contactref element="U4" pad="5"/>
@@ -1940,12 +1950,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="90.59" y1="59.69" x2="89.408" y2="59.69" width="0.254" layer="16"/>
 <via x="89.408" y="59.69" extent="1-16" drill="0.254"/>
 <wire x1="89.408" y1="59.69" x2="88.265" y2="58.547" width="0.254" layer="1"/>
-<wire x1="91.1606" y1="30.79245625" x2="92.61605625" y2="29.337" width="0.254" layer="1"/>
+<wire x1="90.6526" y1="31.30045625" x2="92.61605625" y2="29.337" width="0.254" layer="1"/>
 <wire x1="92.61605625" y1="29.337" x2="92.837" y2="29.337" width="0.254" layer="1"/>
 <wire x1="88.265" y1="47.4185" x2="87.3266" y2="46.4801" width="0.254" layer="1"/>
 <wire x1="87.3266" y1="46.4801" x2="87.3266" y2="43.46705625" width="0.254" layer="1"/>
-<wire x1="87.3266" y1="43.46705625" x2="91.1606" y2="39.63305625" width="0.254" layer="1"/>
-<wire x1="91.1606" y1="39.63305625" x2="91.1606" y2="30.79245625" width="0.254" layer="1"/>
+<wire x1="87.3266" y1="43.46705625" x2="90.6526" y2="40.14105625" width="0.254" layer="1"/>
+<wire x1="90.6526" y1="40.14105625" x2="90.6526" y2="31.30045625" width="0.254" layer="1"/>
 <wire x1="88.265" y1="58.547" x2="88.265" y2="47.4185" width="0.254" layer="1"/>
 </signal>
 <signal name="N$32">
@@ -1972,8 +1982,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="94.869" y1="26.67" x2="95.25" y2="26.289" width="0.8128" layer="16"/>
 <wire x1="95.25" y1="26.289" x2="98.169" y2="26.289" width="0.8128" layer="16"/>
 <wire x1="98.169" y1="26.289" x2="99.82" y2="27.94" width="0.8128" layer="16"/>
-<wire x1="90.61" y1="34.29" x2="90.61" y2="35.873" width="0.4064" layer="16"/>
-<wire x1="90.61" y1="35.873" x2="90.932" y2="36.195" width="0.4064" layer="16"/>
+<wire x1="90.102" y1="34.29" x2="90.102" y2="35.365" width="0.4064" layer="16"/>
+<wire x1="90.102" y1="35.365" x2="90.932" y2="36.195" width="0.4064" layer="16"/>
 <wire x1="90.932" y1="36.195" x2="98.933" y2="36.195" width="0.4064" layer="16"/>
 <wire x1="99.82" y1="29.35523125" x2="99.82" y2="27.94" width="0.4064" layer="16"/>
 <wire x1="100.9406" y1="30.47583125" x2="99.82" y2="29.35523125" width="0.4064" layer="16"/>
@@ -2130,7 +2140,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D8" pad="ANODE"/>
 <contactref element="R32" pad="1"/>
 <wire x1="97.028" y1="34.759" x2="96.227" y2="34.759" width="0.3048" layer="16"/>
-<wire x1="95.758" y1="34.29" x2="94.81" y2="34.29" width="0.3048" layer="16"/>
+<wire x1="95.758" y1="34.29" x2="94.302" y2="34.29" width="0.3048" layer="16"/>
 <wire x1="96.227" y1="34.759" x2="95.758" y2="34.29" width="0.3048" layer="16"/>
 </signal>
 </signals>
