@@ -872,6 +872,31 @@ C&amp;K, Non-Shorting (BBM), 100mA, 12V&lt;br&gt;
 <wire x1="5.325" y1="-4.6" x2="6.325" y2="-3.6" width="0.127" layer="21"/>
 <text x="-6.985" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="2X3_MICROFIT">
+<description>&lt;b&gt;Molex Micro-Fit, 6 pos&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.molex.com/pdm_docs/sd/430450624_sd.pdf&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="3" y="-1.5" drill="1.02"/>
+<pad name="2" x="0" y="-1.5" drill="1.02"/>
+<pad name="3" x="-3" y="-1.5" drill="1.02"/>
+<pad name="4" x="3" y="1.5" drill="1.02"/>
+<pad name="5" x="0" y="1.5" drill="1.02"/>
+<pad name="6" x="-3" y="1.5" drill="1.02"/>
+<wire x1="-6.325" y1="2.685" x2="-6.325" y2="-2.685" width="0.127" layer="21"/>
+<wire x1="-6.325" y1="-2.685" x2="-5.325" y2="-3.685" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.325" y1="-3.685" x2="5.325" y2="-3.685" width="0.127" layer="21"/>
+<wire x1="5.325" y1="-3.685" x2="6.325" y2="-2.685" width="0.127" layer="21" curve="90"/>
+<wire x1="6.325" y1="-2.685" x2="6.325" y2="2.685" width="0.127" layer="21"/>
+<wire x1="6.325" y1="2.685" x2="5.325" y2="3.685" width="0.127" layer="21" curve="90"/>
+<wire x1="5.325" y1="3.685" x2="-5.325" y2="3.685" width="0.127" layer="21"/>
+<wire x1="-5.325" y1="3.685" x2="-6.325" y2="2.685" width="0.127" layer="21" curve="90"/>
+<text x="-6.985" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<hole x="5.15" y="0" drill="2.41"/>
+<hole x="-5.15" y="0" drill="2.41"/>
+<hole x="6" y="2.44" drill="1.02"/>
+<hole x="-6" y="2.44" drill="1.02"/>
+<wire x1="0.762" y1="3.683" x2="0.762" y2="5.085" width="0.127" layer="21"/>
+<wire x1="0.762" y1="5.085" x2="-0.762" y2="5.085" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="5.085" x2="-0.762" y2="3.683" width="0.127" layer="21"/>
+</package>
 <package name="2X3_MICROFIT_RT">
 <description>&lt;b&gt;Molex Micro-Fit, 6 pos, Right Angle&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.molex.com/pdm_docs/sd/430450600_sd.pdf&gt;Datasheet&lt;/a&gt;</description>
 <pad name="1" x="3" y="4.32" drill="1.02"/>
@@ -2212,7 +2237,7 @@ Switches electrical signals</description>
 <gate name="G$1" symbol="GEMS_POWER_PLUG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="INPUT" package="2X3_MICROFIT_RT">
+<device name="INPUT_RT" package="2X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="5"/>
 <connect gate="G$1" pin="BAT" pad="1"/>
@@ -2230,7 +2255,7 @@ Switches electrical signals</description>
 </technology>
 </technologies>
 </device>
-<device name="OUTPUT" package="2X3_MICROFIT_RT">
+<device name="OUTPUT_RT" package="2X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="5"/>
 <connect gate="G$1" pin="BAT" pad="3"/>
@@ -2245,6 +2270,23 @@ Switches electrical signals</description>
 <attribute name="DISP" value="Output" constant="no"/>
 <attribute name="MF" value="Molex" constant="no"/>
 <attribute name="MPN" value="0430450600" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="OUTPUT" package="2X3_MICROFIT">
+<connects>
+<connect gate="G$1" pin="3V3" pad="5"/>
+<connect gate="G$1" pin="BAT" pad="3"/>
+<connect gate="G$1" pin="FAULT" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM4039-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="0430450624" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7771,7 +7813,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
 <part name="Q2" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
-<part name="BT1" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
+<part name="BT1" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK">
+<attribute name="DIGIKEY" value="36-1042-ND"/>
+<attribute name="MPN" value="1042"/>
+</part>
 <part name="D1" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
@@ -7787,7 +7832,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q3" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
 <part name="Q4" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
-<part name="BT2" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
+<part name="BT2" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK">
+<attribute name="DIGIKEY" value="36-1042-ND"/>
+<attribute name="MPN" value="1042"/>
+</part>
 <part name="D2" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
@@ -7803,7 +7851,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="Q5" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
 <part name="Q6" library="bschulz" deviceset="MOSFET-NCH" device="-AON7522E" value="AON7522E"/>
-<part name="BT3" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK"/>
+<part name="BT3" library="bschulz" deviceset="18650" device="1042P_NOSILK" value="186501042P_NOSILK">
+<attribute name="DIGIKEY" value="36-1042-ND"/>
+<attribute name="MPN" value="1042"/>
+</part>
 <part name="D3" library="bschulz" deviceset="DIODE_SCHOTTKY" device="SOD-323">
 <attribute name="DIGIKEY" value="BAT54WS-FDICT-ND"/>
 <attribute name="MF" value="Diodes Inc"/>
@@ -8132,7 +8183,6 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="J2" gate="G$1" x="167.64" y="182.88" smashed="yes">
 <attribute name="NAME" x="167.64" y="176.276" size="1.778" layer="95" ratio="15" align="center"/>
-<attribute name="DISP" x="167.64" y="188.468" size="2.54" layer="94" ratio="15" align="bottom-center"/>
 </instance>
 <instance part="R32" gate="G$1" x="195.58" y="180.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="199.39" y="178.8414" size="1.778" layer="95" rot="R180"/>
